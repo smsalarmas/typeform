@@ -15,6 +15,8 @@ export class Question {
     headline: string;
     description: string;
     required: boolean;
+    LenMin?: number;
+    LenMax?: number;
     multiline?: string;
     multiple?: string;
     choices?: Choice[];

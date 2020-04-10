@@ -9,8 +9,10 @@ export class QuestionsDb {
               "question_type": "multiple-choice",
               "identifier": "list_12110962",
               "headline": "Wen möchtest Du versichern?",
+              "LenMin": 4,
+              "LenMax": 10,
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "true",
               "choices": [
                 {
@@ -47,6 +49,8 @@ export class QuestionsDb {
               "headline": "Bist Du Beamter oder im öffentlichen Dienst angestellt?",
               "description": null,
               "required": false,
+              "LenMin": 4,
+              "LenMax": 10,
               "multiple": "false",
               "choices": [
                 {
@@ -68,6 +72,8 @@ export class QuestionsDb {
               "headline": "Möchtest Du eine Forderungsausfalldeckung absichern?",
               "description": null,
               "required": false,
+              "LenMin": 4,
+              "LenMax": 10,
               "multiple": "false",
               "choices": [
                 {
@@ -90,6 +96,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Wichtig",
@@ -111,6 +119,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja",
@@ -155,6 +165,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja, im Inland",
@@ -186,6 +198,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja, im Inland",
@@ -217,6 +231,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja",
@@ -238,6 +254,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Wichtig",
@@ -259,6 +277,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja",
@@ -280,6 +300,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja, bis zu einem Monat",
@@ -306,6 +328,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Bis 4 m²",
@@ -342,6 +366,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Bis 5 PS",
@@ -378,6 +404,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Nein",
@@ -399,6 +427,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Ja",
@@ -443,6 +473,8 @@ export class QuestionsDb {
               "description": null,
               "required": false,
               "multiple": "false",
+              "LenMin": 4,
+              "LenMax": 10,
               "choices": [
                 {
                   "label": "Keine",
