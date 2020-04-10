@@ -1,5 +1,15 @@
 <div class="input-control">
-  <input type="tel" placeholder="412-123-45-67" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{4}" class="typeform_input" [(ngModel)]="Phone_answer" (keypress)="onPressEnter($event)" autocomplete="off">
+  <select id="pais">
+    <option value="">SELECCIONE UN PAIS</option>
+    <option value="+54">ARGENTINA (+54)</option>
+    <option value="+56">CHILE (+56)</option>
+    <option value="+58">VENEZUELA (+58)</option>
+    <option value="+52">MEXICO (+52)</option>
+    </select>
+  <input type="number" id="telf" placeholder="Enter your phone number" class="typeform_input" [(ngModel)]="Phone_answer" (keypress)="onPressEnter($event)" autocomplete="off">
+
 
 </div>
 <app-continue-button *ngIf="Phone_answer" (next)="gotoNext()"></app-continue-button>
+
+
