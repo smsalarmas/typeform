@@ -1,12 +1,12 @@
-import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Question } from 'src/app/question.model';
 
 @Component({
-  selector: 'app-number-answer',
-  templateUrl: './number-answer.component.html',
-  styleUrls: ['./number-answer.component.scss']
+  selector: 'app-phone-number',
+  templateUrl: './phone-number.component.html',
+  styleUrls: ['./phone-number.component.scss']
 })
-export class NumberAnswerComponent implements OnInit {
+export class PhoneNumberComponent implements OnInit {
 
   @Input()
   question: Question;
@@ -38,7 +38,5 @@ export class NumberAnswerComponent implements OnInit {
       destination: ''
     });
   }
-
-
 
 }

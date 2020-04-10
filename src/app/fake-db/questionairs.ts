@@ -472,6 +472,29 @@ export class QuestionsDb {
               ],
               "jumps": []
             },
+              //start number test
+            {
+              "question_type": "number",
+              "identifier": "number_1",
+              "headline": "Number test here",
+              "description": null,
+              "required": false,
+              "multiline": "false",
+              "jumps": []
+            },
+              //end number test
+
+              //start Phone number test
+            {
+              "question_type": "Phone",
+              "identifier": "PhoneNumber_1",
+              "headline": "Phone number ",
+              "description": null,
+              "required": false,
+              "multiline": "false",
+              "jumps": []
+            },
+              //end Phone number test
             {
               "question_type": "text",
               "identifier": "date_22039590",

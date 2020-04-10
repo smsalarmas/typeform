@@ -7,6 +7,8 @@
         <app-multi-option [question]="question" *ngIf="question.multiple === 'true'" (scrollNext)="gotoNext($event)"></app-multi-option>
       </div>
       <app-text-answer *ngIf="question.question_type == 'text'" [question]="question" (scrollNext)="gotoNext($event)"></app-text-answer>
+      <app-number-answer *ngIf="question.question_type == 'number'" [question]="question" (scrollNext)="gotoNext($event)"></app-number-answer>
+      <app-phone-number *ngIf="question.question_type == 'Phone'" [question]="question" (scrollNext)="gotoNext($event)"></app-phone-number>
   </div>
 </div>
 <!-- List of Questions -->

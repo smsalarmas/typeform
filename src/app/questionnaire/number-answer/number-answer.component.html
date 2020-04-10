@@ -1,3 +1,4 @@
-<p>
-  number-answer works!
-</p>
+<div class="input-control">
+  <input type="number" class="typeform_input" [(ngModel)]="Number_answer" (keypress)="onPressEnter($event)" autocomplete="off">
+</div>
+<app-continue-button *ngIf="Number_answer" (next)="gotoNext()"></app-continue-button>

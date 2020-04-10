@@ -10,9 +10,10 @@ import { QuestionnaireComponent } from './questionnaire.component';
 import { SingleOptionComponent } from './single-option/single-option.component';
 import { MultiOptionComponent } from './multi-option/multi-option.component';
 import { NumberAnswerComponent } from './number-answer/number-answer.component';
+import { PhoneNumberComponent } from './phone-number/phone-number.component';
 
 @NgModule({
-  declarations: [QuestionnaireComponent, TextAnswerComponent, ContinueButtonComponent, SingleOptionComponent, MultiOptionComponent, NumberAnswerComponent],
+  declarations: [QuestionnaireComponent, TextAnswerComponent, ContinueButtonComponent, SingleOptionComponent, MultiOptionComponent, NumberAnswerComponent, PhoneNumberComponent],
   imports: [
     CommonModule,
     QuestionnaireRoutingModule,

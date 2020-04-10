@@ -1,0 +1,5 @@
+<div class="input-control">
+  <input type="tel" placeholder="412-123-45-67" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{4}" class="typeform_input" [(ngModel)]="Phone_answer" (keypress)="onPressEnter($event)" autocomplete="off">
+
+</div>
+<app-continue-button *ngIf="Phone_answer" (next)="gotoNext()"></app-continue-button>
