@@ -1,0 +1,5 @@
+<div class="input-control">
+  <input type="date" class="typeform_input" value=""
+  [(ngModel)]="date_answer" (keypress)="onPressEnter($event)" autocomplete="off">
+</div>
+<app-continue-button *ngIf="date_answer" (next)="gotoNext()"></app-continue-button>

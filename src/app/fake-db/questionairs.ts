@@ -527,6 +527,18 @@ export class QuestionsDb {
               "jumps": []
             },
               //end Phone number test
+
+              //start date test
+            {
+              "question_type": "date",
+              "identifier": "date_1",
+              "headline": "Date ",
+              "description": null,
+              "required": false,
+              "multiline": "false",
+              "jumps": []
+            },
+              //end Phone date test
             {
               "question_type": "text",
               "identifier": "date_22039590",
