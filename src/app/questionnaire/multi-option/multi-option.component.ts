@@ -29,6 +29,7 @@ export class MultiOptionComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.question);
    
   }
 

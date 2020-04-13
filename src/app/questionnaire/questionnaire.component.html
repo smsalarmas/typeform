@@ -1,7 +1,20 @@
 <!-- List of Questions -->
+
+<div class="inner_wrapper">
+  <h3>{{questionsActual.headline}}</h3>{{i}}
+  <div *ngIf="questionsActual.question_type == 'multiple-choice'">
+    <app-single-option [question]="questionsActual" *ngIf="questionsActual.multiple === 'false'" (scrollNext)="gotoNext($event)"></app-single-option>
+    <app-multi-option [question]="questionsActual" *ngIf="questionsActual.multiple === 'true'" (scrollNext)="gotoNext($event)"></app-multi-option>
+  </div>
+  <app-text-answer *ngIf="questionsActual.question_type == 'text'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-text-answer>
+  <app-number-answer *ngIf="questionsActual.question_type == 'number'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-number-answer>
+  <app-phone-number *ngIf="questionsActual.question_type == 'Phone'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-phone-number>
+  <app-date-answer *ngIf="questionsActual.question_type == 'date'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-date-answer>
+</div>
+<!--
 <div  *ngFor="let question of questions$ | async ; let i = index" class="page_wrapper" [class.focus]="i == 0" [id]="question.identifier">
-    <div class="inner_wrapper">
-      <h3>{{question.headline}}</h3>
+    <div class="inner_wrapper" *ngIf="i != 2">
+      <h3>{{question.headline}}</h3>{{i}}
       <div *ngIf="question.question_type == 'multiple-choice'">
         <app-single-option [question]="question" *ngIf="question.multiple === 'false'" (scrollNext)="gotoNext($event)"></app-single-option>
         <app-multi-option [question]="question" *ngIf="question.multiple === 'true'" (scrollNext)="gotoNext($event)"></app-multi-option>
@@ -10,5 +23,5 @@
       <app-number-answer *ngIf="question.question_type == 'number'" [question]="question" (scrollNext)="gotoNext($event)"></app-number-answer>
       <app-phone-number *ngIf="question.question_type == 'Phone'" [question]="question" (scrollNext)="gotoNext($event)"></app-phone-number>
   </div>
-</div>
+</div>-->
 <!-- List of Questions -->

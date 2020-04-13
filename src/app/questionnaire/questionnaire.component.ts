@@ -10,7 +10,9 @@ import { Question } from '../question.model';
 })
 export class QuestionnaireComponent implements OnInit {
   questions$: Observable<Question>;
-
+  questionsActual: Question;
+  AllDataquestions: any;
+  mostrar = 0;
   /**
    * Question Service
    * @param {QuestionnaireService} questionnaireService 
@@ -18,12 +20,19 @@ export class QuestionnaireComponent implements OnInit {
    */
   constructor(private questionnaireService: QuestionnaireService, private el: ElementRef) {     
     this.questions$ = this.questionnaireService.getQuestions();
+    this.questions$.subscribe((Data: any ) => {
+      console.log('constructor');
+      this.AllDataquestions = Data;
+      this.questionsActual = Data[this.mostrar];
+    } )
+    
   }
 
   /**
    * On Init function
    */
   ngOnInit() {    
+    
     this.el.nativeElement.addEventListener('scroll', ($event) => {
       this.onWindowScroll();
     })
@@ -61,9 +70,12 @@ export class QuestionnaireComponent implements OnInit {
    * @param event 
    */
   gotoNext(event) {  
+    this.mostrar = this.mostrar + 1;
+    this.questionsActual = this.AllDataquestions[this.mostrar];
+    
 
-    let node = event.destination ? document.getElementById(event.destination) : document.getElementById(event.question.identifier);
-
+    /*let node = event.destination ? document.getElementById(event.destination) : document.getElementById(event.question.identifier);
+    console.log(node);
     this.el.nativeElement.scrollTo({
       left: 0, 
       top: event.destination ? node.offsetTop : node.offsetTop + 500  
@@ -71,8 +83,10 @@ export class QuestionnaireComponent implements OnInit {
 
     if(event.destination) {
       node.querySelector('input').focus();
+      node.querySelector('input').disabled = false;
     } else {
       node.nextElementSibling.querySelector('input').focus();
-    }
+      node.nextElementSibling.querySelector('input').disabled = false;
+    }*/
   }
 }
