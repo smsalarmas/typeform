@@ -15,24 +15,24 @@ export class QuestionnaireComponent implements OnInit {
   mostrar = 0;
   /**
    * Question Service
-   * @param {QuestionnaireService} questionnaireService 
-   * @param {Element} el 
+   * @param {QuestionnaireService} questionnaireService
+   * @param {Element} el
    */
-  constructor(private questionnaireService: QuestionnaireService, private el: ElementRef) {     
+  constructor(private questionnaireService: QuestionnaireService, private el: ElementRef) {
     this.questions$ = this.questionnaireService.getQuestions();
     this.questions$.subscribe((Data: any ) => {
       console.log('constructor');
       this.AllDataquestions = Data;
       this.questionsActual = Data[this.mostrar];
     } )
-    
+
   }
 
   /**
    * On Init function
    */
-  ngOnInit() {    
-    
+  ngOnInit() {
+
     this.el.nativeElement.addEventListener('scroll', ($event) => {
       this.onWindowScroll();
     })
@@ -55,8 +55,8 @@ export class QuestionnaireComponent implements OnInit {
 
   /**
    * Re-initiate focus on scroll
-   * @param question 
-   * @param elements 
+   * @param question
+   * @param elements
    */
   reinitState(question, questions) {
     questions.forEach(elem => {
@@ -67,18 +67,18 @@ export class QuestionnaireComponent implements OnInit {
 
   /**
    * Go to next question
-   * @param event 
+   * @param event
    */
-  gotoNext(event) {  
+  gotoNext(event) {
     this.mostrar = this.mostrar + 1;
     this.questionsActual = this.AllDataquestions[this.mostrar];
-    
+
 
     /*let node = event.destination ? document.getElementById(event.destination) : document.getElementById(event.question.identifier);
     console.log(node);
     this.el.nativeElement.scrollTo({
-      left: 0, 
-      top: event.destination ? node.offsetTop : node.offsetTop + 500  
+      left: 0,
+      top: event.destination ? node.offsetTop : node.offsetTop + 500
     });
 
     if(event.destination) {
