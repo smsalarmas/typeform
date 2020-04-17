@@ -9,6 +9,7 @@
   <app-number-answer *ngIf="questionsActual.question_type == 'number'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-number-answer>
   <app-phone-number *ngIf="questionsActual.question_type == 'Phone'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-phone-number>
   <app-date-answer *ngIf="questionsActual.question_type == 'date'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-date-answer>
+  <app-email-answer *ngIf="questionsActual.question_type == 'email'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-email-answer>
 </div>
 <!--
 <div  *ngFor="let question of questions$ | async ; let i = index" class="page_wrapper" [class.focus]="i == 0" [id]="question.identifier">
