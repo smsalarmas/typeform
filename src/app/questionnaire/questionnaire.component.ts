@@ -3,10 +3,23 @@ import { QuestionnaireService } from './questionnaire.service';
 import { Observable } from 'rxjs';
 import { Question } from '../question.model';
 
+import { trigger, state, transition, animate, style } from '@angular/animations';
+
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
-  styleUrls: ['./questionnaire.component.scss']
+  styleUrls: ['./questionnaire.component.scss'],
+
+  animations: [
+    trigger('move', [
+      transition('void =>*',[
+        style({transform:'translateX(100%)'}),
+        animate(2000)
+      ])
+
+
+    ])
+  ]
 })
 export class QuestionnaireComponent implements OnInit {
   questions$: Observable<Question>;

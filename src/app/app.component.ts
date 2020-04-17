@@ -6,16 +6,7 @@ import { DOCUMENT } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 
-  animations: [
-    trigger('move', [
-      transition('void =>*',[
-        style({transform:'translateX(100%)'}),
-        animate(2000)
-      ])
 
-
-    ])
-  ]
 
 
 
@@ -142,7 +133,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
 import { Directive } from '@angular/core';
-import { trigger, state, transition, animate, style } from '@angular/animations';
+
 @Directive({
   selector: '[onReturn]'
 })

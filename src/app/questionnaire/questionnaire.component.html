@@ -1,5 +1,6 @@
 <!-- List of Questions -->
-<div class="inner_wrapper">
+<div @move>
+<div class="inner_wrapper" >
   <h3>{{questionsActual.headline}}</h3>{{i}}
   <div *ngIf="questionsActual.question_type == 'multiple-choice'">
     <app-single-option [question]="questionsActual" *ngIf="questionsActual.multiple === 'false'" (scrollNext)="gotoNext($event)"></app-single-option>
@@ -11,6 +12,9 @@
   <app-date-answer *ngIf="questionsActual.question_type == 'date'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-date-answer>
   <app-email-answer *ngIf="questionsActual.question_type == 'email'" [question]="questionsActual" (scrollNext)="gotoNext($event)"></app-email-answer>
 </div>
+</div>
+
+
 <!--
 <div  *ngFor="let question of questions$ | async ; let i = index" class="page_wrapper" [class.focus]="i == 0" [id]="question.identifier">
     <div class="inner_wrapper" *ngIf="i != 2">
