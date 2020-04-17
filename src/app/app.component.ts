@@ -4,8 +4,17 @@ import { DOCUMENT } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+
+
+
+
+
+
 })
+
+
+
 export class AppComponent implements OnInit, AfterViewInit {
 
   title = 'typeform';
@@ -44,13 +53,13 @@ export class AppComponent implements OnInit, AfterViewInit {
   //   var left = el.offsetLeft;
   //   var width = el.offsetWidth;
   //   var height = el.offsetHeight;
-  
+
   //   while(el.offsetParent) {
   //     el = el.offsetParent;
   //     top += el.offsetTop;
   //     left += el.offsetLeft;
   //   }
-  
+
   //   return (
   //     top < (window.pageYOffset + window.innerHeight) &&
   //     left < (window.pageXOffset + window.innerWidth) &&
@@ -124,6 +133,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
 import { Directive } from '@angular/core';
+
 @Directive({
   selector: '[onReturn]'
 })
@@ -134,13 +144,13 @@ export class OnReturnDirective {
   constructor(private _el: ElementRef, private rendere: Renderer) {
     this.el = this._el;
   }
-  
+
 
   @HostListener('click', ['$event'])
   scrollToItem(event) {
     window.scrollTo({ left: 0, top: this.el.nativeElement.offsetTop - 200, behavior: 'smooth' });
   };
-  
+
   @HostListener('keydown', ['$event']) onKeyDown(e) {
     if ((e.which == 13 || e.keyCode == 13)) {
       e.preventDefault();

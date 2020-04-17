@@ -16,8 +16,8 @@
     justify-content: center;
     align-items: center;
     min-height: 500px;
-    overflow: hidden;    
-    color: #bdbdbd;    
+    overflow: hidden;
+    color: #bdbdbd;
     opacity: 0.5;
     padding: 0 50px;
     &.focus {
@@ -25,7 +25,7 @@
       opacity: 1;
     }
   }
-  
+
   .inner_wrapper {
     margin: auto;
     width: 50%;
@@ -35,10 +35,12 @@
       word-break: break-word;
     }
   }
-  
-  
+
+
 @media(max-width: 600px) {
   .inner_wrapper {
     width: 95%;
   }
 }
+
+

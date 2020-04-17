@@ -48,7 +48,7 @@ export class QuestionsDb {
               "identifier": "list_12111610",
               "headline": "Bist Du Beamter oder im öffentlichen Dienst angestellt?",
               "description": null,
-              "required": false,
+              "required": true,
               "LenMin": 4,
               "LenMax": 10,
               "multiple": "false",
@@ -71,7 +71,7 @@ export class QuestionsDb {
               "identifier": "list_12111777",
               "headline": "Möchtest Du eine Forderungsausfalldeckung absichern?",
               "description": null,
-              "required": false,
+              "required": true,
               "LenMin": 4,
               "LenMax": 10,
               "multiple": "false",
@@ -94,7 +94,7 @@ export class QuestionsDb {
               "identifier": "list_12110966",
               "headline": "Wie wichtig ist Dir die Absicherung gegen Mietsachschäden?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -117,7 +117,7 @@ export class QuestionsDb {
               "identifier": "list_12110967",
               "headline": "Bist Du Eigentümer einer oder mehrerer Immobilien?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -163,7 +163,7 @@ export class QuestionsDb {
               "identifier": "list_12110968",
               "headline": "Gehört Dir eine selbstbewohnte Immobilie?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -196,7 +196,7 @@ export class QuestionsDb {
               "identifier": "list_13907264",
               "headline": "Hast Du eine oder mehrere vermietete Immobilien?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -229,7 +229,7 @@ export class QuestionsDb {
               "identifier": "list_12111854",
               "headline": "Möchtest Du in nächster Zeit etwas bauen oder umbauen?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -252,7 +252,7 @@ export class QuestionsDb {
               "identifier": "list_12110972",
               "headline": "Wie wichtig ist Dir die Absicherung gegen beruflichen Schlüsselverlust?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -275,7 +275,7 @@ export class QuestionsDb {
               "identifier": "list_13913438",
               "headline": "Möchtest Du den Verlust privater Schlüssel absichern?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -298,7 +298,7 @@ export class QuestionsDb {
               "identifier": "list_12110969",
               "headline": "Möchtest Du im Ausland abgesichert sein?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -326,7 +326,7 @@ export class QuestionsDb {
               "identifier": "list_12110970",
               "headline": "Hast Du ein Segelboot?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -364,7 +364,7 @@ export class QuestionsDb {
               "identifier": "list_12110971",
               "headline": "Hast Du ein Motorboot?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -402,7 +402,7 @@ export class QuestionsDb {
               "identifier": "list_12110965",
               "headline": "Möchtest Du bei einem Schadensfall einen Teil selbst bezahlen?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -425,7 +425,7 @@ export class QuestionsDb {
               "identifier": "list_12111717",
               "headline": "Hast Du aktuell schon eine Privathaftpflichtversicherung?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -471,7 +471,7 @@ export class QuestionsDb {
               "identifier": "list_12111755",
               "headline": "Wie viele Haftpflichtschäden hattest Du in den letzten 5 Jahren?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiple": "false",
               "LenMin": 4,
               "LenMax": 10,
@@ -504,12 +504,58 @@ export class QuestionsDb {
               ],
               "jumps": []
             },
+              //start number test
+            {
+              "question_type": "number",
+              "identifier": "number_1",
+              "headline": "Number test here",
+              "description": null,
+              "required": true,
+              "multiline": "false",
+              "jumps": []
+            },
+
+
+              //start Phone number test
+            {
+              "question_type": "Phone",
+              "identifier": "PhoneNumber_1",
+              "headline": "Phone number ",
+              "description": null,
+              "required": true,
+              "multiline": "false",
+              "jumps": []
+            },
+
+
+              //start date test
+            {
+              "question_type": "date",
+              "identifier": "date_1",
+              "headline": "Date ",
+              "description": null,
+              "required": true,
+              "multiline": "false",
+              "jumps": []
+            },
+
+              //start email test
+            {
+              "question_type": "email",
+              "identifier": "email_1",
+              "headline": "email ",
+              "description": null,
+              "required": true,
+              "multiline": "false",
+              "jumps": []
+            },
+
             {
               "question_type": "text",
               "identifier": "date_22039590",
               "headline": "Was wäre Dein Wunschtermin für den Beginn der Privathaftpflichtversicherung?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiline": "false",
               "jumps": []
             },
@@ -518,7 +564,7 @@ export class QuestionsDb {
               "identifier": "textarea_12110979",
               "headline": "Hast Du noch weitere Informationen oder Anmerkungen für uns?",
               "description": null,
-              "required": false,
+              "required": true,
               "multiline": "true",
               "jumps": []
             }

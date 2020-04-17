@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent, OnReturnDirective } from './app.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FakeDbService } from './fake-db/fake-db.service';
@@ -13,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     OnReturnDirective
   ],
   imports: [
+    BrowserAnimationsModule,
+
     BrowserModule,
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(FakeDbService, {
